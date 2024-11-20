@@ -169,7 +169,6 @@
         /* Card Containers */
         .skills-container,
         .projects-container,
-        .research-container,
         .teaching-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
@@ -178,6 +177,13 @@
             width: 100%;
         }
 
+        .research-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 2fr));
+            gap: clamp(1rem, 3vw, 2rem);
+            padding: 1rem max(1rem, 3%);
+            width: 100%;
+        }
         /* Cards */
         .skill-card,
         .project-card,
